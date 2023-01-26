@@ -10,7 +10,7 @@ export default function HomePage() {
   const [results, setResults] = useState([]);
   const [inputText, setInputText] = useState('Bang sue');
 
-  const submitHandler = async (e) => {
+  const submitHandler = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const res = await axios.post('http://localhost:3000/api/googlefetch', { search: inputText });
     setResults(res.data.results);
