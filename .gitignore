@@ -14,7 +14,8 @@
 
 # production
 /build
-
+gh-pages
+gh-pages.pub
 # misc
 .DS_Store
 *.pem
@@ -34,3 +35,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
